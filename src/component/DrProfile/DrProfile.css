@@ -1,0 +1,53 @@
+.dr_profile_parent_div {
+  background-color: #fbf9f4;
+  margin-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.dr_prifile_grid_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 65%;
+  margin: auto;
+  gap: 50px;
+}
+.dr_profile_name_div {
+  text-align: left;
+}
+.dr_profile_name_div h1 {
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: rgb(59, 59, 59);
+}
+.dr_profile_name_div h3 {
+  /* font-size: 19px; */
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: rgb(59, 59, 59);
+  line-height: 30px;
+}
+.dr_profile_name_div p {
+  /* font-size: 19px; */
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: rgb(59, 59, 59);
+  line-height: 28px;
+}
+.dr_profile_name_div button {
+  background-color: #ecaa30;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin-top: 20px;
+}
+
+.dr_prifile_achivment_div {
+  background-color: rgb(36, 186, 192);
+  text-align: left;
+  padding: 20px;
+  color: white;
+}
+.ACHIVMENT {
+  margin-bottom: 15px;
+}
