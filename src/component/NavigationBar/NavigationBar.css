@@ -1,0 +1,165 @@
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav_parent_div {
+  position: fixed;
+  width: 100%;
+  color: white;
+  z-index: 2;
+  top: 0;
+}
+
+/* Styling for the header when scrolled */
+.nav_header.scrolled {
+  padding: 1px;
+  background-color: rgb(36, 186, 192); /* Change to your desired color */
+  transition: background-color 0.3s ease;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.clinic-info span,
+.contact-info span {
+  font-size: 16px;
+  color: white;
+  margin: 50px;
+}
+
+.appointment-btn {
+  padding: 8px 16px;
+  background-color: #ecaa30;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.appointment-btn:hover {
+  background-color: #db9f2e;
+}
+
+/* Navbar section (logo and menu) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 10px 200px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Menu styling */
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  margin-left: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  transition: background 0.3s;
+}
+
+.menu ul li a:hover {
+  background-color: #f4f4f4;
+  border-radius: 4px;
+}
+
+/* Hamburger and close icons */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Responsive menu styling */
+
+@media screen and (max-width: 819px) {
+  .nav_welcome {
+    display: none;
+  }
+  .nav_pnone_number {
+    position: absolute;
+    left: 0;
+    top: -25px;
+  }
+}
+@media (max-width: 768px) {
+  .nav_header {
+    background-color: rgb(36, 186, 192);
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  .navbar {
+    padding: 30px;
+  }
+  .logo {
+    color: white;
+    z-index: 1;
+  }
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: rgb(36, 186, 192);
+    width: 100%;
+    text-align: center;
+    transition: all 3s ease-in-out;
+    padding: 20px;
+  }
+
+  .menu.open ul {
+    display: block;
+    margin-top: 80px;
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+    text-align: left;
+    margin-top: 35px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+  }
+
+  .menu ul li a {
+    color: white;
+    padding: 15px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .close-icon {
+    color: white;
+    z-index: 1;
+    position: relative;
+  }
+}
+@media screen and (max-width: 440px) {
+  .nav_pnone_number {
+    display: none;
+  }
+}
