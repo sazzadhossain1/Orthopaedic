@@ -1,0 +1,60 @@
+.patients_journey_parent_div {
+  margin-top: 70px;
+}
+.orthopaedic_text_div {
+  width: 45%;
+  margin: auto;
+}
+.orthopaedic_text_div h2 {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.orthopaedic_text_div p {
+  color: #5b6161;
+}
+.patients_journey_grid_div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 65%;
+  margin: auto;
+  margin-top: 60px;
+  gap: 20px;
+}
+.patients_journey_cart_div {
+  background-color: #fbf9f4;
+  height: 320px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
+  position: relative;
+}
+.faStethoscope {
+  font-size: 30px;
+  color: #ecaa30;
+}
+.patients_journey_cart_div h3 {
+  font-weight: 300;
+  font-size: 17px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.patients_journey_cart_div p {
+  color: #5b6161;
+  margin-bottom: 10px;
+}
+.patients_number {
+  border: 2px solid #ecaa30;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -25px;
+  left: 110px;
+}
+.patients_number span {
+  position: relative;
+  margin-left: 13px;
+  top: 10px;
+}
