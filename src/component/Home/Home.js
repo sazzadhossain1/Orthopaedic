@@ -1,10 +1,10 @@
 import React from "react";
 import "./Home.css";
 import Carousel from "../Carousel/Carousel";
-import NavigationBar from "../NavigationBar/NavigationBar";
 import OrthopaedicTreatment from "../OrthopaedicTreatment/OrthopaedicTreatment";
 import DrProfile from "../DrProfile/DrProfile";
 import PatientsJourney from "../PatientsJourney/PatientsJourney";
+import PatientsSay from "../PatientsSay/PatientsSay";
 
 const Home = () => {
   return (
@@ -13,6 +13,7 @@ const Home = () => {
       <OrthopaedicTreatment></OrthopaedicTreatment>
       <DrProfile></DrProfile>
       <PatientsJourney></PatientsJourney>
+      <PatientsSay></PatientsSay>
     </div>
   );
 };

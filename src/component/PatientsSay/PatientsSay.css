@@ -1,0 +1,18 @@
+.patients_say_parent_div {
+  margin-top: 100px;
+  background-color: #00b0b8;
+  padding: 20px;
+}
+.patients_say_grid_div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 75%;
+  margin: auto;
+}
+.patients_say_cart_div_first {
+  text-align: left;
+}
+
+.patients_say_cart_div_second {
+  text-align: left;
+}
