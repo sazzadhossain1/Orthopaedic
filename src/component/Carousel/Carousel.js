@@ -53,7 +53,7 @@ const Carousel = () => {
         {/* Carousel Photo */}
         <div className="carousel-photo">
           <img src={photos[currentPhotoIndex].src} alt="carousel" />
-          <div className="carousel-text">{photos[currentPhotoIndex].text}</div>
+          {/* <div className="carousel-text">{photos[currentPhotoIndex].text}</div> */}
         </div>
 
         {/* Right Arrow Button */}

@@ -5,6 +5,7 @@ import OrthopaedicTreatment from "../OrthopaedicTreatment/OrthopaedicTreatment";
 import DrProfile from "../DrProfile/DrProfile";
 import PatientsJourney from "../PatientsJourney/PatientsJourney";
 import PatientsSay from "../PatientsSay/PatientsSay";
+import Location from "../Location/Location";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <DrProfile></DrProfile>
       <PatientsJourney></PatientsJourney>
       <PatientsSay></PatientsSay>
+      <Location></Location>
     </div>
   );
 };

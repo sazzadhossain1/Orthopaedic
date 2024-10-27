@@ -11,6 +11,11 @@
   margin: auto;
   gap: 50px;
 }
+.drPrifilePhoto {
+  width: 300px;
+  height: 370px;
+  object-fit: cover;
+}
 .dr_profile_name_div {
   text-align: left;
 }

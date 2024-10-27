@@ -6,7 +6,7 @@ const DrProfile = () => {
     <div className="dr_profile_parent_div">
       <div className="dr_prifile_grid_div">
         <div>
-          <img src={drPrifilePhoto} alt="" />
+          <img className="drPrifilePhoto" src={drPrifilePhoto} alt="" />
         </div>
 
         <div className="dr_profile_name_div">
