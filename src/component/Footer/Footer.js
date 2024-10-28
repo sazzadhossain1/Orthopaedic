@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Footer.css";
 import logo from "../../accets/logo/logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -71,7 +72,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer_blank_div"></div>
-        <div className="footer_down_site">
+        {/* <div className="footer_down_site">
           <div>
             <h2>Lorem, ipsum.</h2>
             <p>Who we are</p>
@@ -103,9 +104,12 @@ const Footer = () => {
               <button class="subscribe-button">SUBSCRIBE</button>
             </div>
           </div>
-        </div>
+        </div> */}
         <small className="small">
-          2017-2018 © Orthopaedic Surgery & Sports
+          Orthopaedic © Surgery & Sports | Powered by{" "}
+          <Link className="abaacorp" to="https://abaacorp.com/" target="_blank">
+            Abaacorp.com
+          </Link>
         </small>
       </div>
     </div>

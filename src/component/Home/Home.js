@@ -9,13 +9,15 @@ import Location from "../Location/Location";
 
 const Home = () => {
   return (
-    <div className="carousel-wrapper">
-      <Carousel></Carousel>
-      <OrthopaedicTreatment></OrthopaedicTreatment>
-      <DrProfile></DrProfile>
-      <PatientsJourney></PatientsJourney>
-      <PatientsSay></PatientsSay>
-      <Location></Location>
+    <div className="" id="home_parent">
+      <div className="carousel-wrapper">
+        <Carousel></Carousel>
+        <OrthopaedicTreatment></OrthopaedicTreatment>
+        <DrProfile></DrProfile>
+        <PatientsJourney></PatientsJourney>
+        <PatientsSay></PatientsSay>
+        <Location></Location>
+      </div>
     </div>
   );
 };

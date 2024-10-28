@@ -54,6 +54,7 @@
 .footer_media_icon {
   border: 2px solid #868d8d;
   padding: 5px;
+  cursor: pointer;
 }
 
 .footer_blank_div {
@@ -119,4 +120,7 @@
 
 .subscribe-button:hover {
   background-color: #15b9ba; /* Darken button on hover */
+}
+.abaacorp {
+  color: blue;
 }

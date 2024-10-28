@@ -51,7 +51,7 @@
   display: flex;
   justify-content: space-between;
 
-  align-items: center;
+  /* align-items: center; */
   padding: 10px 200px;
 }
 
@@ -59,7 +59,11 @@
   font-size: 24px;
   font-weight: bold;
 }
-
+.logo_two {
+  margin-left: -180px;
+  width: 30%;
+  border-radius: 3px;
+}
 .menu ul {
   list-style: none;
   display: flex;
@@ -157,7 +161,51 @@
   display: block;
   opacity: 1;
 }
+.makeAnAppointments_div {
+  text-align: left;
+}
+.makeAnAppointments_div h2 {
+  text-align: center;
+  margin-bottom: 15px;
 
+  color: black;
+}
+.makeAnAppointments_div input {
+  width: 100%;
+  padding: 15px;
+
+  border: 1px solid gray;
+  margin-top: 20px;
+}
+.makeAnAppointments_div select {
+  width: 100%;
+  padding: 15px;
+
+  border: 1px solid gray;
+  margin-top: 20px;
+}
+.make_location_input_div {
+  width: 23%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #fbf9f4;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.faXmark {
+  color: black;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  font-size: 25px;
+  /* border: 1px solid black; */
+  padding: 5px;
+  /* border-radius: 50%; */
+  cursor: pointer;
+}
 @media screen and (max-width: 1107px) {
   .navbar {
     padding: 10px 20px;

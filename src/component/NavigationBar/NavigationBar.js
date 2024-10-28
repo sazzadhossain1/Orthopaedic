@@ -2,11 +2,16 @@ import {
   faAngleDown,
   faBars,
   faTimes,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect } from "react";
 import "./NavigationBar.css";
 import { Link } from "react-router-dom";
+import logoTwo from "../../accets/logo/logoTwo.jpg";
+import logoThree from "../../accets/logo/logoThree.png";
+import logoFour from "../../accets/logo/logoFour.jpg";
+import logoFive from "../../accets/logo/logoFive.png";
 
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,6 +37,26 @@ const NavigationBar = () => {
     };
   }, []);
 
+  const appointmentBtn = () => {
+    const makeAnAppointmentsDiv = document.getElementById(
+      "makeAnAppointments_div"
+    );
+    const getHomeParent = document.getElementById("home_parent");
+
+    makeAnAppointmentsDiv.removeAttribute("hidden", "hidden");
+    getHomeParent.className = "overlay";
+  };
+
+  const closeModal = () => {
+    const makeAnAppointmentsDiv = document.getElementById(
+      "makeAnAppointments_div"
+    );
+
+    const getHomeParent = document.getElementById("home_parent");
+
+    makeAnAppointmentsDiv.setAttribute("hidden", "hidden");
+    getHomeParent.className = "";
+  };
   return (
     <div className="nav_parent_div">
       <header className={`nav_header ${isScrolled ? "scrolled" : ""}`}>
@@ -44,13 +69,17 @@ const NavigationBar = () => {
           </div>
           <div className="contact-info">
             <span className="nav_pnone_number">880174 983 3863</span>
-            <button className="appointment-btn">Make an Appointment</button>
+            <button className="appointment-btn" onClick={appointmentBtn}>
+              Make an Appointment
+            </button>
           </div>
         </div>
         {/* Logo and navigation */}
 
         <nav className="navbar">
-          <div className="logo">Logo</div>
+          <div className="logo">
+            <img className="logo_two" src={logoTwo} alt="" />
+          </div>
           <div className={`menu ${isMenuOpen ? "open" : ""}`}>
             <ul>
               <li>
@@ -119,6 +148,36 @@ const NavigationBar = () => {
           </div>
         </nav>
       </header>
+
+      <div>
+        <div
+          className="makeAnAppointments_div"
+          id="makeAnAppointments_div"
+          hidden
+        >
+          <div className="make_location_input_div">
+            <FontAwesomeIcon
+              className="faXmark"
+              icon={faXmark}
+              onClick={closeModal}
+            />
+            <h2>Make An Appointments</h2>
+            <input type="text" placeholder="Namer" /> <br />
+            <input type="email" name="" id="" placeholder="Email" />
+            <br />
+            <input type="number" name="" id="" placeholder="Phone" />
+            <br />
+            <select name="" id="">
+              <option value="">Hip Surgery</option>
+            </select>
+            <br />
+            <input type="date" name="" id="" placeholder="Date" />
+            <button className="confirm">
+              <Link> CONFIRM MY APPOINTMENT</Link>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
