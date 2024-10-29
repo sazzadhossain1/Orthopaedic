@@ -68,6 +68,17 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 999px) {
+  .orthopaedicTreatment_p {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .orthopaedicTreatment_icon_grid_div {
+    grid-template-columns: repeat(4, 1fr);
+    width: 75%;
+  }
+}
 @media screen and (max-width: 950px) {
   .orthopaedicTreatment_p {
     width: 90%;

@@ -14,8 +14,8 @@ const Home = () => {
         <Carousel></Carousel>
         <OrthopaedicTreatment></OrthopaedicTreatment>
         <DrProfile></DrProfile>
-        {/* <PatientsJourney></PatientsJourney>
-        <PatientsSay></PatientsSay>
+        <PatientsJourney></PatientsJourney>
+        {/* <PatientsSay></PatientsSay>
         <Location></Location> */}
       </div>
     </div>

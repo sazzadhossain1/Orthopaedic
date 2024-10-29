@@ -58,3 +58,48 @@
   margin-left: 13px;
   top: 10px;
 }
+@media screen and (max-width: 1536px) {
+  .patients_journey_grid_div {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1135px) {
+  .patients_journey_grid_div {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1009px) {
+  .patients_journey_grid_div {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 956px) {
+  .patients_journey_grid_div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 909px) {
+  .orthopaedic_text_div {
+    width: 70%;
+  }
+  .patients_journey_grid_div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 676px) {
+  .orthopaedic_text_div {
+    width: 80%;
+  }
+  .patients_journey_grid_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 444px) {
+  .orthopaedic_text_div {
+    width: 95%;
+    margin: auto;
+  }
+  .patients_journey_grid_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
