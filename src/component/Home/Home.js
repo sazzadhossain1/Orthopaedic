@@ -13,8 +13,8 @@ const Home = () => {
       <div className="carousel-wrapper">
         <Carousel></Carousel>
         <OrthopaedicTreatment></OrthopaedicTreatment>
-        {/* <DrProfile></DrProfile>
-        <PatientsJourney></PatientsJourney>
+        <DrProfile></DrProfile>
+        {/* <PatientsJourney></PatientsJourney>
         <PatientsSay></PatientsSay>
         <Location></Location> */}
       </div>

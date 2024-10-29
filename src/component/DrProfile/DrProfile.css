@@ -56,3 +56,30 @@
 .ACHIVMENT {
   margin-bottom: 15px;
 }
+
+@media screen and (max-width: 1600px) {
+  .dr_prifile_grid_div {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1212px) {
+  .dr_prifile_grid_div {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .dr_prifile_grid_div {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .dr_prifile_grid_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 690px) {
+  .dr_prifile_grid_div {
+    grid-template-columns: repeat(1, 1fr);
+    width: 95%;
+  }
+}
