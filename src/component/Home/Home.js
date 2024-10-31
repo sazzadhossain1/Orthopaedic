@@ -15,8 +15,8 @@ const Home = () => {
         <OrthopaedicTreatment></OrthopaedicTreatment>
         <DrProfile></DrProfile>
         <PatientsJourney></PatientsJourney>
-        {/* <PatientsSay></PatientsSay>
-        <Location></Location> */}
+        <PatientsSay></PatientsSay>
+        <Location></Location>
       </div>
     </div>
   );

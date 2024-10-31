@@ -6,6 +6,7 @@
 .patients_say_grid_div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  /* align-items: center; */
   width: 75%;
   gap: 20px;
   margin: auto;
@@ -90,5 +91,55 @@
 .playSay {
   width: 100%;
 }
-.watch_video {
+
+@media screen and (max-width: 1287px) {
+  .patients_say_cart_text_div {
+    background-color: white;
+    padding: 30px;
+    margin-top: 40px;
+
+    height: 80%;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .patients_say_grid_div {
+    width: 100%;
+  }
+  .patients_say_cart_text_div {
+  }
+}
+@media screen and (max-width: 950px) {
+  .patients_say_grid_div {
+    width: 100%;
+  }
+  .patients_say_cart_text_div .p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 902px) {
+  .patients_say_grid_div {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 550px) {
+  .patients_say_cart_text_div {
+    width: 100%;
+  }
+  .videoImg {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .patients_say_cart_div_first h3 {
+    font-size: 25px;
+  }
+  .patients_say_cart_div_second h3 {
+    font-size: 25px;
+  }
+  .patients_say_cart_text_div {
+    width: 100%;
+  }
+  .patients_say_cart_text_div .p {
+    font-size: 15px;
+  }
 }

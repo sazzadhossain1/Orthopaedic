@@ -21,15 +21,15 @@ const Location = () => {
             <FontAwesomeIcon className="faBook" icon={faBook} />
             <p>PATIENT'S FORM</p>
           </div>
-          <div className="location_icon_div">
+          <div className="location_icon_div margit_top">
             <FontAwesomeIcon className="faBook" icon={faBook} />
             <p>YOUR FIRST VISIT</p>
           </div>
-          <div className="location_icon_div">
+          <div className="location_icon_div margit_top">
             <FontAwesomeIcon className="faBook" icon={faBook} />
             <p>INSTRUCTION AAFTER OP</p>
           </div>
-          <div className="location_icon_div">
+          <div className="location_icon_div margit_top">
             <FontAwesomeIcon className="faBook" icon={faBook} />
             <p>PATIENT'S EDUCATIONS</p>
           </div>

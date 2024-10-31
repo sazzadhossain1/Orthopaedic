@@ -32,7 +32,7 @@ const PatientsSay = () => {
             </p>
             <div>
               <div className="video_img">
-                <img src={videoImg} alt="" />
+                <img className="videoImg" src={videoImg} alt="" />
               </div>
               <div className="watch_flex_parent_div">
                 <div className="watch_flex_div">

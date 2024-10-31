@@ -10,7 +10,7 @@
   text-align: left;
 }
 .map_img {
-  width: 100%;
+  max-width: 100%;
   margin-top: 15px;
 }
 .patients_resources_div {
@@ -71,4 +71,41 @@
 }
 .faBook {
   font-size: 40px;
+}
+@media screen and (max-width: 1540px) {
+  .location_parent_div {
+    width: 80%;
+    height: 200px;
+  }
+  .map_img {
+  }
+  .location_icon_div {
+    margin-top: 20px;
+  }
+  .location_input_div input {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .location_parent_div {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .location_icon_div {
+    margin-top: 15px;
+  }
+  .location_input_div input {
+    margin-top: 23px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .location_parent_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 700px) {
+  .location_parent_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

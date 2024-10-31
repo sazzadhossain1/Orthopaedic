@@ -83,3 +83,8 @@
     width: 95%;
   }
 }
+@media screen and (max-width: 310px) {
+  .drPrifilePhoto {
+    max-width: 100%;
+  }
+}
